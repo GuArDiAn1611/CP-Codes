@@ -1,11 +1,19 @@
 #include<iostream>
 #include<string>
-#include<bitset>
-#include<cmath>
 using namespace std;
-int main()
-{
-     bitset<8> result(pow(2,7));
-    cout<<(result>>4)<<endl;
+int main(){
+    int n;
+    cin>>n;
+    string s;
+    for(int i=0;i<n;i++){
+        cin>>s;
+        int p=s.size();
+        if(p>10){
+            cout<<s[0]<<p-2<<s[p-1]<<"\n";
+        }
+        else{
+            cout<<s<<"\n";
+        }
+    }
     return 0;
-}
+} 
